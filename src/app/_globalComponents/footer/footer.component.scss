@@ -1,0 +1,90 @@
+@import '../../_scss/common.scss';
+
+.footer{
+    width: 100vw;
+    height: 40px;
+    background-color: $medBlue;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid $darkTeal;
+    z-index: 1;
+    @include flexCentCent();
+    color: white;
+    font-size: 26px;
+}
+
+.car{
+    position: absolute;
+    top: 40%;
+    transform: translateX(-50vw);
+    animation: jump 10s infinite;
+    backface-visibility: hidden;
+}
+
+.ramp{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(30deg);
+    font-size: 46px;
+}
+
+@keyframes jump {
+    0%{
+        top: 40%;
+        transform: translateX(-60vw);
+    }
+    10%{
+        color: #b71c1c;
+    }
+    15%{
+        color: #01579B;
+    }
+    20%{
+        color: #b71c1c;
+    }
+    25%{
+        color: #01579B;
+    }
+    30%{
+        color: #b71c1c;
+    }
+    35%{
+        color: #01579B;
+    }
+    40%{
+        color: #b71c1c;
+    }
+    45%{
+        color: #01579B;
+    }
+    50%{
+        color: #b71c1c;
+    }
+    55%{
+        color: #01579B;
+    }
+    60%{
+        color: #b71c1c;
+    }
+    65%{
+        color: #01579B;
+    }
+    70%{
+        color: #b71c1c;
+    }
+    75%{
+        color: #01579B;
+    }
+    80%{
+        color: #b71c1c;
+    }
+    85%{
+        color: #01579B;
+    }
+    
+    100%{
+        transform: translateX(65vw);
+    }
+}

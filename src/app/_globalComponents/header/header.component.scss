@@ -1,0 +1,43 @@
+@import '../../_scss/common.scss';
+
+.header{
+    width: 100vw;
+    height: 60px;
+    background-color: $medBlue;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid $darkTeal;
+    z-index: 1;
+    color: white;
+    @include flexCentCent();
+    &_titleSection{
+        @include flexCentCent();
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    &_logo{
+        font-size: 36px;
+        margin: 0 1rem;
+    }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+
+li{
+    margin: 0 2rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    &:hover{
+        text-shadow: 0 1px 1px white;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
